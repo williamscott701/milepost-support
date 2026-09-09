@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Milepost</title>
+<style>
+:root { --ink:#16202b; --soft:#5a6675; --rule:#dfe4ea; --ground:#ffffff; --accent:#1e5b7a; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e8ecf1; --soft:#9aa5b2; --rule:#28323d; --ground:#111820; --accent:#7fb3cf; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--ground); color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding:48px 22px 88px; }
+main { max-width:44rem; margin:0 auto; }
+h1 { font-size:2rem; letter-spacing:-.02em; margin:0 0 .3em; }
+h2 { font-size:1.15rem; margin:2.2em 0 .5em; }
+h3 { font-size:1rem; margin:1.6em 0 .3em; }
+p, li { color:var(--ink); }
+.lede { color:var(--soft); font-size:1.05rem; margin-top:0; }
+a { color:var(--accent); }
+nav { display:flex; gap:18px; padding-bottom:18px; margin-bottom:28px;
+  border-bottom:1px solid var(--rule); font-size:.92rem; flex-wrap:wrap; }
+footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--rule);
+  color:var(--soft); font-size:.85rem; }
+dt { font-weight:600; margin-top:1.4em; }
+dd { margin:.3em 0 0; color:var(--soft); }
+code { background:rgba(127,127,127,.14); padding:.1em .35em; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body><main>
+<nav>
+  <a href="index.html">Support</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+</nav>
+
+<h1>Milepost</h1>
+<p class="lede">A mileage log for people who deduct their driving. Questions and
+answers below; anything else, email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a> and
+you'll get a reply from the person who wrote the app.</p>
+
+<h2>Common questions</h2>
+<dl>
+  <dt>Why does it need location set to "Always"?</dt>
+  <dd>Because the whole point is recording drives you didn't remember to start.
+  "While Using the App" only records while Milepost is open on screen, which is
+  almost never while you're driving. If you'd rather not grant it, the manual
+  timer and hand-entered trips work fine.</dd>
+
+  <dt>Will it drain my battery?</dt>
+  <dd>Milepost idles on the low-power location signal iOS already computes from
+  cell and wifi transitions, plus the motion coprocessor's activity stream. Full
+  GPS only runs once a drive is actually under way, and a confident "walking"
+  reading switches it back off.</dd>
+
+  <dt>Where does my data go?</dt>
+  <dd>Nowhere. There's no account and no server. Your trips and routes live in
+  the app's own storage on your phone.</dd>
+
+  <dt>It missed a drive. What now?</dt>
+  <dd>Add it by hand — Review, then the + button. If it happens often, check
+  Settings shows location access as "Always", and that "Record drives
+  automatically" is on.</dd>
+
+  <dt>Why did it call my drive to work personal?</dt>
+  <dd>Travel between home and a regular workplace is commuting, and commuting
+  isn't deductible. Milepost applies that rule deliberately, even if you've
+  classified the route differently before. You can still override any single
+  trip.</dd>
+
+  <dt>The distance looks slightly low.</dt>
+  <dd>It's meant to. Milepost discards GPS readings it can't trust and rounds
+  down, because claiming fewer miles than you drove is a much smaller problem
+  than claiming more.</dd>
+
+  <dt>What's in the free version?</dt>
+  <dd>30 trips a month, classification, your named places and vehicles, and your
+  running deduction total. Pro adds unlimited trips, the PDF and CSV report,
+  odometer reconciliation and the pre-filing checks. Milepost keeps recording
+  past the free limit either way — a trip that wasn't recorded can't be
+  recovered later.</dd>
+
+  <dt>The rate for this year says "unconfirmed".</dt>
+  <dd>The IRS publishes the standard mileage rate late in the preceding year.
+  Until it's confirmed, Milepost carries the previous year's rate forward and
+  marks it rather than guessing. You can enter the published figure yourself in
+  Settings › Mileage rates.</dd>
+
+  <dt>How do I cancel?</dt>
+  <dd>iOS Settings › your name › Subscriptions › Milepost. Cancel at least a day
+  before it renews.</dd>
+</dl>
+
+<h2>Not tax advice</h2>
+<p>Milepost keeps a record of your driving and applies the published IRS
+standard mileage rates for the dates you travelled. It doesn't know your
+circumstances and it isn't a substitute for a tax professional.</p>
+
+<footer>Milepost · <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a> · Updated 09 September 2026</footer>
+</main></body>
+</html>
